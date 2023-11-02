@@ -20,3 +20,5 @@ class AboutPageTests(SimpleTestCase):
     def test_url_available_by_name(self):
         response = self.client.get(reverse('about'))
         self.assertEquals(response.status_code, 200)
+
+
